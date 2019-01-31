@@ -1,0 +1,9 @@
+C:\Users\Administrateur\Desktop\C#\PhotoMaton\PhotoMaton\bin\Debug\PhotoMaton.exe.config
+C:\Users\Administrateur\Desktop\C#\PhotoMaton\PhotoMaton\bin\Debug\PhotoMaton.exe
+C:\Users\Administrateur\Desktop\C#\PhotoMaton\PhotoMaton\bin\Debug\PhotoMaton.pdb
+C:\Users\Administrateur\Desktop\C#\PhotoMaton\PhotoMaton\obj\Debug\PhotoMaton.Form1.resources
+C:\Users\Administrateur\Desktop\C#\PhotoMaton\PhotoMaton\obj\Debug\PhotoMaton.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\C#\PhotoMaton\PhotoMaton\obj\Debug\PhotoMaton.csproj.GenerateResource.cache
+C:\Users\Administrateur\Desktop\C#\PhotoMaton\PhotoMaton\obj\Debug\PhotoMaton.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\Desktop\C#\PhotoMaton\PhotoMaton\obj\Debug\PhotoMaton.exe
+C:\Users\Administrateur\Desktop\C#\PhotoMaton\PhotoMaton\obj\Debug\PhotoMaton.pdb
