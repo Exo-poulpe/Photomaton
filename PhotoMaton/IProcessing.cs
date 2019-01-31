@@ -4,7 +4,7 @@
     {
         uint StepCount { get; set; }
         string Path { get; set; }
-        void DrawStep(int step);
+        void DrawStep(uint step);
         void Draw();
 
     }
