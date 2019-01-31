@@ -1,9 +1,11 @@
-﻿namespace PhotoMaton
+﻿using System.Drawing;
+
+namespace PhotoMaton
 {
     interface IProcessing
     {
         uint StepCount { get; set; }
-        string Path { get; set; }
+        Bitmap Image { get; set; }
         void DrawStep(uint step);
         void Draw();
 
