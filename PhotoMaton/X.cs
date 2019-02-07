@@ -34,20 +34,21 @@ namespace PhotoMaton
                     {
                         Image.GetPixel(x - 2, y - 2);
                     }
-
                 }
             }
 
         }
-
         public Point next(Point p)
         {
             int y;
             int x;
+            int largeur = Image.Size.Width / 2;
+            int longueur = Image.Size.Height / 2;
+
             if ((p.X % 2 == 0) && (p.Y % 2 == 0))
             {
-                x = (p.X + 2) % getWidth();
-                y = (p.Y + 2) % getHeight();
+                x = (p.X + 2) % largeur;
+                y = (p.Y + 2) % longueur;
             }
             else
             {
@@ -55,13 +56,13 @@ namespace PhotoMaton
                 {
                     if (p.X - 2 < 0)
                     {
-                        x = getWidth() + (p.X - 2);
+                        x = largeur + (p.X - 2);
                     }
                     else
                     {
                         x = p.X - 2;
                     }
-                    y = (p.Y + 2) % getHeight();
+                    y = (p.Y + 2) % longueur;
                 }
                 else
                 {
@@ -69,19 +70,19 @@ namespace PhotoMaton
                     {
                         if (p.Y - 2 < 0)
                         {
-                            y = getHeight() + (p.Y - 2);
+                            y = longueur + (p.Y - 2);
                         }
                         else
                         {
                             y = p.Y - 2;
                         }
-                        x = (p.X + 2) % getWidth();
+                        x = (p.X + 2) % largeur;
                     }
                     else
                     {
                         if (p.Y - 2 < 0)
                         {
-                            y = getHeight() + (p.Y - 2);
+                            y = longueur + (p.Y - 2);
                         }
                         else
                         {
@@ -90,7 +91,7 @@ namespace PhotoMaton
 
                         if (p.X - 2 < 0)
                         {
-                            x = getWidth() + (p.X - 2);
+                            x = largeur + (p.X - 2);
                         }
                         else
                         {
