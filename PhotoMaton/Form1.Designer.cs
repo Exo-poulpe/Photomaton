@@ -65,7 +65,8 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.ouvrirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ouvrirToolStripMenuItem.Text = "Ouvrir";
             // 
             // transformationToolStripMenuItem
@@ -84,38 +85,44 @@
             // photoMatonToolStripMenuItem
             // 
             this.photoMatonToolStripMenuItem.Name = "photoMatonToolStripMenuItem";
-            this.photoMatonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.photoMatonToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
+            this.photoMatonToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.photoMatonToolStripMenuItem.Text = "PhotoMaton";
             // 
             // boulangerToolStripMenuItem
             // 
             this.boulangerToolStripMenuItem.Name = "boulangerToolStripMenuItem";
-            this.boulangerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.boulangerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
+            this.boulangerToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.boulangerToolStripMenuItem.Text = "Boulanger";
             this.boulangerToolStripMenuItem.Click += new System.EventHandler(this.boulangerToolStripMenuItem_Click);
             // 
             // couplageToolStripMenuItem
             // 
             this.couplageToolStripMenuItem.Name = "couplageToolStripMenuItem";
-            this.couplageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.couplageToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
+            this.couplageToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.couplageToolStripMenuItem.Text = "Couplage";
             // 
             // inverseToolStripMenuItem
             // 
             this.inverseToolStripMenuItem.Name = "inverseToolStripMenuItem";
-            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inverseToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D4)));
+            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.inverseToolStripMenuItem.Text = "Inverse";
             // 
             // doubleBinaireToolStripMenuItem
             // 
             this.doubleBinaireToolStripMenuItem.Name = "doubleBinaireToolStripMenuItem";
-            this.doubleBinaireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doubleBinaireToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D5)));
+            this.doubleBinaireToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.doubleBinaireToolStripMenuItem.Text = "Double Binaire";
             // 
             // twistToolStripMenuItem
             // 
             this.twistToolStripMenuItem.Name = "twistToolStripMenuItem";
-            this.twistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.twistToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D6)));
+            this.twistToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.twistToolStripMenuItem.Text = "X";
             // 
             // pibImg

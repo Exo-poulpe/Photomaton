@@ -9,7 +9,6 @@ namespace PhotoMaton
 {
     class Boulanger : IProcessing
     {
-        private const int STEP_AMOUNT = 17;
 
         public uint StepCount { get; set; } // count of steps done
         public Bitmap Image { get; set; } // image file
@@ -55,14 +54,7 @@ namespace PhotoMaton
 
         public Bitmap Draw()
         {
-            if (Image.Width % 2 == 1 || Image.Height % 2 == 1)
-            {
-                throw new Exception("The Width and Height of the image have to be even");
-            }
             Bitmap tmp = default(Bitmap);
-            //Bitmap tmp2 = default(Bitmap);
-            for (int i = 0; i < 1; i++)
-            {
 
                 tmp = new Bitmap(Image.Width, Image.Height);
                 //tmp2 = new Bitmap(Image.Width*2, Image.Height*2);
@@ -91,7 +83,7 @@ namespace PhotoMaton
                     }
                 }
                 this.Image = tmp;
-            }
+            
             return tmp;
         }
 

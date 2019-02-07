@@ -87,7 +87,6 @@ namespace PhotoMaton
                 }
             }
             pib.Image = New;
-            Thread.Sleep(100);
             return New;
         }
     }
