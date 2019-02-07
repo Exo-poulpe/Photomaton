@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PhotoMaton
 {
@@ -38,7 +40,7 @@ namespace PhotoMaton
             }
 
         }
-        public Point next(Point p)
+        public Point CalcPoint(Point p)
         {
             int y;
             int x;
@@ -101,6 +103,27 @@ namespace PhotoMaton
                 }
             }
             return new Point(x, y);
+        }
+
+        public Bitmap Draw(Image img, PictureBox pib)
+        {
+            int w = img.Width;
+            int h = img.Height;
+            Bitmap resized = new Bitmap(img);
+            Bitmap New = new Bitmap(256, 256);
+            Point p = default(Point);
+
+            for (int i = 0; i < w; i++)
+            {
+                for (int j = 0; j < h; j++)
+                {
+                    p = CalcPoint(new Point(i, j));
+                    New.SetPixel(p.X, p.Y, resized.GetPixel(i, j));
+                }
+            }
+            pib.Image = New;
+            Thread.Sleep(100);
+            return New;
         }
     }
 }

@@ -38,7 +38,7 @@ namespace PhotoMaton
         {
             Image img = pibImg.Image;
             Photomaton ph = new Photomaton(new Bitmap(img));
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 8; i++)
             {
                 pibImg.CreateGraphics().DrawImage(ph.Draw(img, pibImg), new Point(0, 0));
                 img = pibImg.Image;
@@ -47,17 +47,27 @@ namespace PhotoMaton
 
         private void twistToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Bitmap img = new Bitmap(Image.FromFile("C:\\Users\\Administrateur\\Downloads\\transfo\\joconde256.bmp"));
-            X myImageX = new X(img);
-            for (uint i = 0; i < 50; i++)
+            Image img = pibImg.Image;
+            X myImageX = new X(new Bitmap(img));
+            for (int i = 0; i < 100; i++)
             {
-                myImageX.DrawStep(i);
+                pibImg.CreateGraphics().DrawImage(myImageX.Draw(img, pibImg), new Point(0, 0));
+                img = myImageX.Image;
             }
 
 
         }
 
+        private void boulangerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Image img = pibImg.Image;
+            Boulanger Boouboul = new Boulanger(new Bitmap(img));
+            for (int i = 0; i < 17; i++)
+            {
+                pibImg.CreateGraphics().DrawImage(Boouboul.Draw(), new Point(0, 0));
+                img = Boouboul.Image;
+            }
 
-
+        }
     }
 }

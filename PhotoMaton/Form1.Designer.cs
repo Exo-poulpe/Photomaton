@@ -84,38 +84,39 @@
             // photoMatonToolStripMenuItem
             // 
             this.photoMatonToolStripMenuItem.Name = "photoMatonToolStripMenuItem";
-            this.photoMatonToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.photoMatonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.photoMatonToolStripMenuItem.Text = "PhotoMaton";
             // 
             // boulangerToolStripMenuItem
             // 
             this.boulangerToolStripMenuItem.Name = "boulangerToolStripMenuItem";
-            this.boulangerToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.boulangerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.boulangerToolStripMenuItem.Text = "Boulanger";
+            this.boulangerToolStripMenuItem.Click += new System.EventHandler(this.boulangerToolStripMenuItem_Click);
             // 
             // couplageToolStripMenuItem
             // 
             this.couplageToolStripMenuItem.Name = "couplageToolStripMenuItem";
-            this.couplageToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.couplageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.couplageToolStripMenuItem.Text = "Couplage";
             // 
             // inverseToolStripMenuItem
             // 
             this.inverseToolStripMenuItem.Name = "inverseToolStripMenuItem";
-            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inverseToolStripMenuItem.Text = "Inverse";
             // 
             // doubleBinaireToolStripMenuItem
             // 
             this.doubleBinaireToolStripMenuItem.Name = "doubleBinaireToolStripMenuItem";
-            this.doubleBinaireToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.doubleBinaireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.doubleBinaireToolStripMenuItem.Text = "Double Binaire";
             // 
             // twistToolStripMenuItem
             // 
             this.twistToolStripMenuItem.Name = "twistToolStripMenuItem";
-            this.twistToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.twistToolStripMenuItem.Text = "Twist";
+            this.twistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.twistToolStripMenuItem.Text = "X";
             // 
             // pibImg
             // 
