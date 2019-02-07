@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,6 +18,7 @@ namespace PhotoMaton
         {
             InitializeComponent();
             this.ouvrirToolStripMenuItem.Click += FileInput;
+            this.photoMatonToolStripMenuItem.Click += PhotoMat;
         }
 
         public void FileInput(object sender,EventArgs e)
@@ -26,9 +28,21 @@ namespace PhotoMaton
             {
                 string path = opf.FileName;
                 Image img = Image.FromFile(path);
-                this.CreateGraphics().DrawImage(img, new Point(0, 0));
+                pibImg.Image = img;
             }
 
+        }
+
+
+        public void PhotoMat(object sender,EventArgs e)
+        {
+            Image img = pibImg.Image;
+            Photomaton ph = new Photomaton(new Bitmap(img));
+            for (int i = 0; i < 100; i++)
+            {
+                pibImg.CreateGraphics().DrawImage(ph.Draw(img, pibImg), new Point(0, 0));
+                img = pibImg.Image;
+            }
         }
 
 

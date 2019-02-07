@@ -38,7 +38,9 @@
             this.inverseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doubleBinaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.twistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pibImg = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibImg)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -63,7 +65,7 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.ouvrirToolStripMenuItem.Text = "Ouvrir";
             // 
             // transformationToolStripMenuItem
@@ -82,50 +84,60 @@
             // photoMatonToolStripMenuItem
             // 
             this.photoMatonToolStripMenuItem.Name = "photoMatonToolStripMenuItem";
-            this.photoMatonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.photoMatonToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.photoMatonToolStripMenuItem.Text = "PhotoMaton";
             // 
             // boulangerToolStripMenuItem
             // 
             this.boulangerToolStripMenuItem.Name = "boulangerToolStripMenuItem";
-            this.boulangerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.boulangerToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.boulangerToolStripMenuItem.Text = "Boulanger";
             // 
             // couplageToolStripMenuItem
             // 
             this.couplageToolStripMenuItem.Name = "couplageToolStripMenuItem";
-            this.couplageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.couplageToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.couplageToolStripMenuItem.Text = "Couplage";
             // 
             // inverseToolStripMenuItem
             // 
             this.inverseToolStripMenuItem.Name = "inverseToolStripMenuItem";
-            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.inverseToolStripMenuItem.Text = "Inverse";
             // 
             // doubleBinaireToolStripMenuItem
             // 
             this.doubleBinaireToolStripMenuItem.Name = "doubleBinaireToolStripMenuItem";
-            this.doubleBinaireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doubleBinaireToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.doubleBinaireToolStripMenuItem.Text = "Double Binaire";
             // 
             // twistToolStripMenuItem
             // 
             this.twistToolStripMenuItem.Name = "twistToolStripMenuItem";
-            this.twistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.twistToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.twistToolStripMenuItem.Text = "Twist";
+            // 
+            // pibImg
+            // 
+            this.pibImg.Location = new System.Drawing.Point(19, 48);
+            this.pibImg.Name = "pibImg";
+            this.pibImg.Size = new System.Drawing.Size(539, 380);
+            this.pibImg.TabIndex = 1;
+            this.pibImg.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(928, 523);
+            this.Controls.Add(this.pibImg);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,6 +155,7 @@
         private System.Windows.Forms.ToolStripMenuItem inverseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem doubleBinaireToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem twistToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pibImg;
     }
 }
 
