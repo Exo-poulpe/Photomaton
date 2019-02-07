@@ -21,15 +21,10 @@ namespace PhotoMaton
             this.Image = img;
         }
 
-        public void Draw()
-        {
-            throw new NotImplementedException();
-        }
-
         public void DrawStep(uint step)
         {
             Bitmap resized = new Bitmap(Image, new Size(Image.Size.Width / 2, Image.Size.Height / 2));
-            resized.Save(@"C:\Users\Administrateur\Pictures\std\test.jpg");
+            resized.Save(@"C:\Users\Administrateur\Pictures\std\test.png");
             throw new NotImplementedException();
         }
     }

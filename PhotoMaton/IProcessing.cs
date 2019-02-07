@@ -7,7 +7,5 @@ namespace PhotoMaton
         uint StepCount { get; set; }
         Bitmap Image { get; set; }
         void DrawStep(uint step);
-        void Draw();
-
     }
 }
