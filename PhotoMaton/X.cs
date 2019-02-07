@@ -17,11 +17,6 @@ namespace PhotoMaton
             this.Image = imageX;
         }
 
-        public void Draw()
-        {
-
-        }
-
         //En X Pour chaque pixel, si son numéro de ligne est pair, on l'augmente de 2, 
         //s'il est impair on le diminue de 2. Même chose pour la colonne.
         //Contrainte de taille d'image :hauteur et largeur paires. Période : ppcm(larg/2, haut/2)
@@ -43,6 +38,68 @@ namespace PhotoMaton
                 }
             }
 
+        }
+
+        public Point next(Point p)
+        {
+            int y;
+            int x;
+            if ((p.X % 2 == 0) && (p.Y % 2 == 0))
+            {
+                x = (p.X + 2) % getWidth();
+                y = (p.Y + 2) % getHeight();
+            }
+            else
+            {
+                if ((p.X % 2 == 1) && (p.Y % 2 == 0))
+                {
+                    if (p.X - 2 < 0)
+                    {
+                        x = getWidth() + (p.X - 2);
+                    }
+                    else
+                    {
+                        x = p.X - 2;
+                    }
+                    y = (p.Y + 2) % getHeight();
+                }
+                else
+                {
+                    if ((p.X % 2 == 0) && (p.Y % 2 == 1))
+                    {
+                        if (p.Y - 2 < 0)
+                        {
+                            y = getHeight() + (p.Y - 2);
+                        }
+                        else
+                        {
+                            y = p.Y - 2;
+                        }
+                        x = (p.X + 2) % getWidth();
+                    }
+                    else
+                    {
+                        if (p.Y - 2 < 0)
+                        {
+                            y = getHeight() + (p.Y - 2);
+                        }
+                        else
+                        {
+                            y = p.Y - 2;
+                        }
+
+                        if (p.X - 2 < 0)
+                        {
+                            x = getWidth() + (p.X - 2);
+                        }
+                        else
+                        {
+                            x = p.X - 2;
+                        }
+                    }
+                }
+            }
+            return new Point(x, y);
         }
     }
 }
