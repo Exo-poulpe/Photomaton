@@ -66,7 +66,7 @@
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
             this.ouvrirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.ouvrirToolStripMenuItem.Text = "Ouvrir";
             // 
             // transformationToolStripMenuItem
@@ -124,6 +124,7 @@
             this.twistToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D6)));
             this.twistToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.twistToolStripMenuItem.Text = "X";
+            this.twistToolStripMenuItem.Click += new System.EventHandler(this.twistToolStripMenuItem_Click);
             // 
             // pibImg
             // 
