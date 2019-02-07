@@ -28,10 +28,18 @@ namespace PhotoMaton
                 Image img = Image.FromFile(path);
                 this.CreateGraphics().DrawImage(img, new Point(0, 0));
             }
-
         }
 
-
-
+        private void twistToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bitmap img = new Bitmap(Image.FromFile("C:\\Users\\Administrateur\\Downloads\\transfo\\joconde256.bmp"));
+            X myImageX = new X(img);
+            for (uint i = 0; i < 50; i++)
+            {
+                myImageX.DrawStep(i);
+            }
+            
+            
+        }
     }
 }
