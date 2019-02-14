@@ -15,6 +15,7 @@ namespace PhotoMaton
     public partial class Form1 : Form
     {
         private const int BOULANGER_STEPS = 17;
+        private const int DOUBLEBINAIRE_STEPS = 8;
         private const int PHOTOMATON_STEPS = 8;
 
         public Form1()
@@ -74,6 +75,17 @@ namespace PhotoMaton
                 img = Boouboul.Image;
             }
 
+        }
+
+        private void doubleBinaireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Image img = pibImg.Image;
+            DoubleBinaire doublebin = new DoubleBinaire(new Bitmap(img));
+            for (int i = 0; i < DOUBLEBINAIRE_STEPS; i++)
+            {
+                pibImg.CreateGraphics().DrawImage(doublebin.Draw(), new Point(0, 0));
+                img = doublebin.Image;
+            }
         }
     }
 }

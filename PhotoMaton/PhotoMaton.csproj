@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Boulanger.cs" />
     <Compile Include="Couplage.cs" />
+    <Compile Include="DoubleBinaire.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
