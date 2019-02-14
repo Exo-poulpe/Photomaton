@@ -55,10 +55,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hilbert.cs" />
+    <Compile Include="Inverse.cs" />
     <Compile Include="IProcessing.cs" />
     <Compile Include="Photomaton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Swastika.cs" />
     <Compile Include="X.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
