@@ -23,13 +23,6 @@ namespace PhotoMaton
             this.Image = img;
         }
 
-        public void DrawStep(uint step)
-        {
-            Bitmap resized = new Bitmap(Image, new Size(Image.Size.Width / 4, Image.Size.Height / 4));
-
-
-        }
-
         private Point CalcPoint(Point p)
         {
             int l = Image.Size.Width / 2;
@@ -70,11 +63,11 @@ namespace PhotoMaton
             return new Point(x, y);
         }
 
-        public Bitmap Draw(Image img,PictureBox pib )
+        public Bitmap Draw()
         {
-            int w = img.Width;
-            int h = img.Height;
-            Bitmap resized = new Bitmap(img);
+            int w = Image.Width;
+            int h = Image.Height;
+            Bitmap resized = new Bitmap(Image);
             Bitmap New = new Bitmap(256, 256);
             Point p = default(Point);
 
@@ -86,7 +79,7 @@ namespace PhotoMaton
                     New.SetPixel(p.X, p.Y, resized.GetPixel(i, j));
                 }
             }
-            pib.Image = New;
+            this.Image = New;
             return New;
         }
     }

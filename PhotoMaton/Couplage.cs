@@ -24,12 +24,7 @@ namespace PhotoMaton
             return p / a;
         }
 
-        public void Draw()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DrawStep(uint step)
+        public Bitmap Draw()
         {
             throw new NotImplementedException();
         }

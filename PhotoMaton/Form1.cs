@@ -49,20 +49,20 @@ namespace PhotoMaton
             Photomaton ph = new Photomaton(new Bitmap(img));
             for (int i = 0; i < PHOTOMATON_STEPS; i++)
             {
-                pibImg.CreateGraphics().DrawImage(ph.Draw(img, pibImg), new Point(0, 0));
+                pibImg.CreateGraphics().DrawImage(ph.Draw(), new Point(0, 0));
                 img = pibImg.Image;
             }
         }
 
         private void twistToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Image img = pibImg.Image;
+            /*Image img = pibImg.Image;
             X myImageX = new X(new Bitmap(img));
             for (int i = 0; i < 128; i++)
             {
                 pibImg.CreateGraphics().DrawImage(myImageX.Draw(img, pibImg), new Point(0, 0));
                 img = myImageX.Image;
-            }
+            }*/
         }
 
         private void boulangerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -86,6 +86,11 @@ namespace PhotoMaton
                 pibImg.CreateGraphics().DrawImage(doublebin.Draw(), new Point(0, 0));
                 img = doublebin.Image;
             }
+        }
+
+        private void swastikaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

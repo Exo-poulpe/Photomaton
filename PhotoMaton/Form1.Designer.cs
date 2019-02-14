@@ -39,6 +39,7 @@
             this.doubleBinaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.twistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pibImg = new System.Windows.Forms.PictureBox();
+            this.swastikaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibImg)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +78,8 @@
             this.couplageToolStripMenuItem,
             this.inverseToolStripMenuItem,
             this.doubleBinaireToolStripMenuItem,
-            this.twistToolStripMenuItem});
+            this.twistToolStripMenuItem,
+            this.swastikaToolStripMenuItem});
             this.transformationToolStripMenuItem.Name = "transformationToolStripMenuItem";
             this.transformationToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
             this.transformationToolStripMenuItem.Text = "Transformation";
@@ -135,6 +137,14 @@
             this.pibImg.TabIndex = 1;
             this.pibImg.TabStop = false;
             // 
+            // swastikaToolStripMenuItem
+            // 
+            this.swastikaToolStripMenuItem.Name = "swastikaToolStripMenuItem";
+            this.swastikaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D7)));
+            this.swastikaToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.swastikaToolStripMenuItem.Text = "Swastika";
+            this.swastikaToolStripMenuItem.Click += new System.EventHandler(this.swastikaToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +176,7 @@
         private System.Windows.Forms.ToolStripMenuItem doubleBinaireToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem twistToolStripMenuItem;
         private System.Windows.Forms.PictureBox pibImg;
+        private System.Windows.Forms.ToolStripMenuItem swastikaToolStripMenuItem;
     }
 }
 
