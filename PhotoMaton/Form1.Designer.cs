@@ -38,8 +38,8 @@
             this.inverseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doubleBinaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.twistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pibImg = new System.Windows.Forms.PictureBox();
             this.swastikaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pibImg = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibImg)).BeginInit();
             this.SuspendLayout();
@@ -112,6 +112,7 @@
             this.inverseToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D4)));
             this.inverseToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.inverseToolStripMenuItem.Text = "Inverse";
+            this.inverseToolStripMenuItem.Click += new System.EventHandler(this.inverseToolStripMenuItem_Click);
             // 
             // doubleBinaireToolStripMenuItem
             // 
@@ -129,14 +130,6 @@
             this.twistToolStripMenuItem.Text = "X";
             this.twistToolStripMenuItem.Click += new System.EventHandler(this.twistToolStripMenuItem_Click);
             // 
-            // pibImg
-            // 
-            this.pibImg.Location = new System.Drawing.Point(19, 48);
-            this.pibImg.Name = "pibImg";
-            this.pibImg.Size = new System.Drawing.Size(539, 380);
-            this.pibImg.TabIndex = 1;
-            this.pibImg.TabStop = false;
-            // 
             // swastikaToolStripMenuItem
             // 
             this.swastikaToolStripMenuItem.Name = "swastikaToolStripMenuItem";
@@ -144,6 +137,14 @@
             this.swastikaToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.swastikaToolStripMenuItem.Text = "Swastika";
             this.swastikaToolStripMenuItem.Click += new System.EventHandler(this.swastikaToolStripMenuItem_Click);
+            // 
+            // pibImg
+            // 
+            this.pibImg.Location = new System.Drawing.Point(19, 48);
+            this.pibImg.Name = "pibImg";
+            this.pibImg.Size = new System.Drawing.Size(539, 380);
+            this.pibImg.TabIndex = 1;
+            this.pibImg.TabStop = false;
             // 
             // Form1
             // 

@@ -17,6 +17,7 @@ namespace PhotoMaton
         private const int BOULANGER_STEPS = 17;
         private const int DOUBLEBINAIRE_STEPS = 8;
         private const int PHOTOMATON_STEPS = 8;
+        private const int INVERSE_STEP = 4;
 
         public Form1()
         {
@@ -85,6 +86,18 @@ namespace PhotoMaton
             {
                 pibImg.CreateGraphics().DrawImage(doublebin.Draw(), new Point(0, 0));
                 img = doublebin.Image;
+            }
+        }
+
+        private void inverseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Image img = pibImg.Image;
+            Inverse inv = new Inverse(new Bitmap(img));
+            for (int i = 0; i < INVERSE_STEP; i++)
+            {
+                pibImg.CreateGraphics().DrawImage(inv.Draw(), new Point(0, 0));
+                img = inv.Image;
+                Thread.Sleep(100);
             }
         }
 
