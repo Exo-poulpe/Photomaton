@@ -23,7 +23,7 @@ namespace PhotoMaton
             Image = img;
         }
 
-        public Bitmap Draw()
+        public Bitmap Draw(Bitmap pImage)
         {
             Image flip = this.Image;
             flip.RotateFlip(RotateFlipType.Rotate180FlipX);

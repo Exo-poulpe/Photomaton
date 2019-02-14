@@ -55,6 +55,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inverse.cs" />
     <Compile Include="IProcessing.cs" />
     <Compile Include="Photomaton.cs" />
     <Compile Include="Program.cs" />

@@ -6,6 +6,6 @@ namespace PhotoMaton
     {
         uint StepCount { get; set; }
         Bitmap Image { get; set; }
-        Bitmap Draw();
+        Bitmap Draw(Bitmap pImage);
     }
 }
