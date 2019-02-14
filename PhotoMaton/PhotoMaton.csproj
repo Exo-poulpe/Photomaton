@@ -55,7 +55,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hilbert.cs" />
     <Compile Include="Inverse.cs" />
     <Compile Include="IProcessing.cs" />
     <Compile Include="Photomaton.cs" />
