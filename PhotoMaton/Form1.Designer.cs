@@ -105,6 +105,7 @@
             this.couplageToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
             this.couplageToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.couplageToolStripMenuItem.Text = "Couplage";
+            this.couplageToolStripMenuItem.Click += new System.EventHandler(this.couplageToolStripMenuItem_Click);
             // 
             // inverseToolStripMenuItem
             // 

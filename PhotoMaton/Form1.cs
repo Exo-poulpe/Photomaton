@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿/*
+ * Author: Santos, Troller, Julling
+ * Date: 14.02.2019
+ * Class: T.IS-E2B
+ * Version: 1.0
+ */
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -18,6 +18,9 @@ namespace PhotoMaton
         private const int DOUBLEBINAIRE_STEPS = 8;
         private const int PHOTOMATON_STEPS = 8;
         private const int INVERSE_STEP = 4;
+        private const int SWASTIKA_STEP = 18;
+        private const int COUPLAGE_STEPS = 17;
+
 
         public Form1()
         {
@@ -50,8 +53,9 @@ namespace PhotoMaton
             Photomaton ph = new Photomaton(new Bitmap(img));
             for (int i = 0; i < PHOTOMATON_STEPS; i++)
             {
-                pibImg.CreateGraphics().DrawImage(ph.Draw(), new Point(0, 0));
+                pibImg.Image = ph.Draw(new Bitmap(img));
                 img = pibImg.Image;
+                pibImg.CreateGraphics().DrawImage(img, new Point(0, 0));
             }
         }
 
@@ -72,8 +76,8 @@ namespace PhotoMaton
             Boulanger Boouboul = new Boulanger(new Bitmap(img));
             for (int i = 0; i < BOULANGER_STEPS; i++)
             {
-                pibImg.CreateGraphics().DrawImage(Boouboul.Draw(), new Point(0, 0));
-                img = Boouboul.Image;
+                pibImg.CreateGraphics().DrawImage(Boouboul.Draw(new Bitmap(img)), new Point(0, 0));
+                img = Boouboul.img;
             }
 
         }
@@ -84,8 +88,8 @@ namespace PhotoMaton
             DoubleBinaire doublebin = new DoubleBinaire(new Bitmap(img));
             for (int i = 0; i < DOUBLEBINAIRE_STEPS; i++)
             {
-                pibImg.CreateGraphics().DrawImage(doublebin.Draw(), new Point(0, 0));
-                img = doublebin.Image;
+                pibImg.CreateGraphics().DrawImage(doublebin.Draw(new Bitmap(img)), new Point(0, 0));
+                img = doublebin.img;
             }
         }
 
@@ -95,15 +99,40 @@ namespace PhotoMaton
             Inverse inv = new Inverse(new Bitmap(img));
             for (int i = 0; i < INVERSE_STEP; i++)
             {
-                pibImg.CreateGraphics().DrawImage(inv.Draw(), new Point(0, 0));
-                img = inv.Image;
+                pibImg.CreateGraphics().DrawImage(inv.Draw(new Bitmap(img)), new Point(0, 0));
+                img = inv.img;
                 Thread.Sleep(100);
             }
         }
 
         private void swastikaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Image img = pibImg.Image;
+            Swastika swa = new Swastika(new Bitmap(img));
+            for (int i = 0; i < SWASTIKA_STEP; i++)
+            {
+                pibImg.CreateGraphics().DrawImage(swa.Draw(new Bitmap(img)), new Point(0, 0));
+                img = swa.img;
+               // Thread.Sleep(100);
+            }
+        }
 
+        private void couplageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Image img = pibImg.Image;
+            Photomaton ph = new Photomaton(new Bitmap(img));
+            Boulanger Boouboul = new Boulanger(new Bitmap(img));
+            for (int i = 0; i < COUPLAGE_STEPS; i++)
+            {
+                img = ph.Draw(new Bitmap(img));
+                img = Boouboul.Draw(new Bitmap(img));
+
+                pibImg.CreateGraphics().DrawImage(new Bitmap(img), new Point(0, 0));
+                img = Boouboul.img;
+
+                /*pibImg.CreateGraphics().DrawImage(new Bitmap(img), new Point(0, 0));
+                pibImg.Image = img;*/
+            }
         }
     }
 }

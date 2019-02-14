@@ -1,10 +1,10 @@
-﻿/*using System;
-using System.Collections.Generic;
+﻿/*
+ * Author: Santos, Troller, Juling
+ * Date: 14.02.2019
+ * Class: T.IS-E2B
+ * Version: 1.0
+ *
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PhotoMaton
@@ -125,5 +125,4 @@ namespace PhotoMaton
             return New;
         }
     }
-}
-*/
+}*/

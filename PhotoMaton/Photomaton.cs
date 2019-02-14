@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * Author: Santos, Troller, Juling
+ * Date: 14.02.2019
+ * Class: T.IS-E2B
+ * Version: 1.0
+ */
 using System.Drawing;
-using System.Windows.Forms;
-using System.Threading;
 
 namespace PhotoMaton
 {
@@ -16,17 +15,17 @@ namespace PhotoMaton
         private Bitmap _image = null;
 
         public uint StepCount { get => _stepCount; set => _stepCount = value; }
-        public Bitmap Image { get => _image; set => _image = value; }
+        public Bitmap img { get => _image; set => _image = value; }
 
         public Photomaton(Bitmap img)
         {
-            this.Image = img;
+            this.img = img;
         }
 
         private Point CalcPoint(Point p)
         {
-            int l = Image.Size.Width / 2;
-            int h = Image.Size.Height / 2;
+            int l = img.Size.Width / 2;
+            int h = img.Size.Height / 2;
             int x = default(int);
             int y = default(int);
 
@@ -63,11 +62,11 @@ namespace PhotoMaton
             return new Point(x, y);
         }
 
-        public Bitmap Draw()
+        public Bitmap Draw(Bitmap img)
         {
-            int w = Image.Width;
-            int h = Image.Height;
-            Bitmap resized = new Bitmap(Image);
+            int w = img.Width;
+            int h = img.Height;
+            Bitmap resized = img;
             Bitmap New = new Bitmap(256, 256);
             Point p = default(Point);
 
@@ -79,7 +78,7 @@ namespace PhotoMaton
                     New.SetPixel(p.X, p.Y, resized.GetPixel(i, j));
                 }
             }
-            this.Image = New;
+            //this.Image = New;
             return New;
         }
     }

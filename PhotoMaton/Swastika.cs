@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/*
+ * Author: Santos, Troller, Juling
+ * Date: 14.02.2019
+ * Class: T.IS-E2B
+ * Version: 1.0
+ */
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PhotoMaton
 {
@@ -13,25 +14,25 @@ namespace PhotoMaton
         private Bitmap _image;
 
         public uint StepCount { get => _stepCount; set => _stepCount = value; }
-        public Bitmap Image { get => _image; set => _image = value; }
+        public Bitmap img { get => _image; set => _image = value; }
 
         public Swastika(Bitmap pImage)
         {
-            this.Image = pImage;
+            this.img = pImage;
         }
 
-        public Bitmap Draw()
+        public Bitmap Draw(Bitmap img)
         {
-            Bitmap tmp = default(Bitmap);
-            tmp = new Bitmap(Image.Width, Image.Height);
-            for (int x = 0; x < Image.Width; x++)
+            Bitmap tmp = img;
+            tmp = new Bitmap(this.img.Width, this.img.Height);
+            for (int x = 0; x < this.img.Width; x++)
             {
-                for (int y = 0; y < Image.Height; y++)
+                for (int y = 0; y < this.img.Height; y++)
                 {
                     int col = x;
                     int lig = y;
-                    int l = Image.Width / 2;
-                    int h = Image.Height / 2;
+                    int l = this.img.Width / 2;
+                    int h = this.img.Height / 2;
 
                     if ((x % 2 == 0) && (y % 2 == 0))
                     {
@@ -50,7 +51,7 @@ namespace PhotoMaton
                         int ligR = milLig - lig;
                         int c = ligR; int li = -colR;
                         col = milCol + c;
-                        if (Image.Width / 2 % 2 == 0)
+                        if (this.img.Width / 2 % 2 == 0)
                         {
                             col--;
                         }
@@ -69,7 +70,7 @@ namespace PhotoMaton
                         int c = -ligR; int li = colR;
                         col = milCol + c;
                         lig = milLig - li;
-                        if (Image.Height / 2 % 2 == 0)
+                        if (this.img.Height / 2 % 2 == 0)
                         {
                             lig--;
                         }
@@ -81,23 +82,23 @@ namespace PhotoMaton
 
                         int milieu = 3 * h / 2;
                         col += 2 * (milieu - col);
-                        if (Image.Width / 2 % 2 == 0)
+                        if (this.img.Width / 2 % 2 == 0)
                         {
                             col--;
                         }
                         milieu = 3 * l / 2;
                         lig += 2 * (milieu - lig);
-                        if (Image.Height / 2 % 2 == 0)
+                        if (this.img.Height / 2 % 2 == 0)
                         {
                             lig--;
                         }
                     }
-                    tmp.SetPixel(lig, col, Image.GetPixel(x, y));
+                    tmp.SetPixel(lig, col, this.img.GetPixel(x, y));
                 }
             }
 
-            this.Image = tmp;
-            return this.Image;
+            this.img = tmp;
+            return this.img;
             //return new Point(col, lig);
         }
     }

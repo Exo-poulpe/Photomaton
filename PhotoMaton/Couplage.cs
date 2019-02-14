@@ -1,20 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/*
+ * Author: Santos, Troller, Juling
+ * Date: 14.02.2019
+ * Class: T.IS-E2B
+ * Version: 1.0
+ */
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PhotoMaton
 {
     class Couplage : IProcessing
     {
         public uint StepCount { get; set; }
-        public Bitmap Image { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public Bitmap img { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Couplage(Bitmap imageCouplage)
         {
-            this.Image = imageCouplage;
+            this.img = imageCouplage;
         }
 
         public int ppcm(int a, int b)
@@ -24,9 +26,9 @@ namespace PhotoMaton
             return p / a;
         }
 
-        public Bitmap Draw()
+        public Bitmap Draw(Bitmap img)
         {
-            throw new NotImplementedException();
+           return img;
         }
     }
 }

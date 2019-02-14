@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/*
+ * Author: Santos, Troller, Juling
+ * Date: 14.02.2019
+ * Class: T.IS-E2B
+ * Version: 1.0
+ */
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace PhotoMaton
 {
@@ -16,19 +16,19 @@ namespace PhotoMaton
         private Bitmap _image;
 
         public uint StepCount { get => _stepCount; set => _stepCount = value; }
-        public Bitmap Image { get => _image; set => _image = value; }
+        public Bitmap img { get => _image; set => _image = value; }
 
         public Inverse(Bitmap img)
         {
-            Image = img;
+            this.img = img;
         }
 
         public Bitmap Draw(Bitmap pImage)
         {
-            Image flip = this.Image;
+            Image flip = this.img;
             flip.RotateFlip(RotateFlipType.Rotate180FlipX);
-            this.Image = new Bitmap(flip);
-            return this.Image;
+            this.img = new Bitmap(flip);
+            return this.img;
         }
     }
 }

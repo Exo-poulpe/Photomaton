@@ -35,3 +35,4 @@ C:\Users\Administrateur\Desktop\C#\PhotoMaton2\Photomaton\PhotoMaton\obj\Debug\P
 C:\Users\Administrateur\Desktop\C#\PhotoMaton2\Photomaton\PhotoMaton\obj\Debug\PhotoMaton.csproj.CoreCompileInputs.cache
 C:\Users\Administrateur\Desktop\C#\PhotoMaton2\Photomaton\PhotoMaton\obj\Debug\PhotoMaton.exe
 C:\Users\Administrateur\Desktop\C#\PhotoMaton2\Photomaton\PhotoMaton\obj\Debug\PhotoMaton.pdb
+C:\Users\Administrateur\Documents\GitHub\Photomaton\PhotoMaton\obj\Debug\PhotoMaton.csprojAssemblyReference.cache
