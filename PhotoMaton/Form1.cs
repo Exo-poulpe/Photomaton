@@ -58,7 +58,7 @@ namespace PhotoMaton
         {
             Image img = pibImg.Image;
             X myImageX = new X(new Bitmap(img));
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 128; i++)
             {
                 pibImg.CreateGraphics().DrawImage(myImageX.Draw(img, pibImg), new Point(0, 0));
                 img = myImageX.Image;

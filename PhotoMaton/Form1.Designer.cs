@@ -125,6 +125,7 @@
             this.twistToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D6)));
             this.twistToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.twistToolStripMenuItem.Text = "X";
+            this.twistToolStripMenuItem.Click += new System.EventHandler(this.twistToolStripMenuItem_Click);
             // 
             // pibImg
             // 

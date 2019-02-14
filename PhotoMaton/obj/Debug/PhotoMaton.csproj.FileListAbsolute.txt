@@ -20,7 +20,6 @@ C:\Users\Administrateur\Source\Repos\Photomaton\PhotoMaton\obj\Debug\PhotoMaton.
 C:\Users\Administrateur\Documents\GitHub\Photomaton\PhotoMaton\bin\Debug\PhotoMaton.exe.config
 C:\Users\Administrateur\Documents\GitHub\Photomaton\PhotoMaton\bin\Debug\PhotoMaton.exe
 C:\Users\Administrateur\Documents\GitHub\Photomaton\PhotoMaton\bin\Debug\PhotoMaton.pdb
-C:\Users\Administrateur\Documents\GitHub\Photomaton\PhotoMaton\obj\Debug\PhotoMaton.csprojAssemblyReference.cache
 C:\Users\Administrateur\Documents\GitHub\Photomaton\PhotoMaton\obj\Debug\PhotoMaton.Form1.resources
 C:\Users\Administrateur\Documents\GitHub\Photomaton\PhotoMaton\obj\Debug\PhotoMaton.Properties.Resources.resources
 C:\Users\Administrateur\Documents\GitHub\Photomaton\PhotoMaton\obj\Debug\PhotoMaton.csproj.GenerateResource.cache

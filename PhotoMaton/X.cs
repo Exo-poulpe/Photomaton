@@ -40,7 +40,7 @@ namespace PhotoMaton
             }
 
         }
-        public Point CalcPoint(Point p)
+        public Point Next(Point p)
         {
             int y;
             int x;
@@ -117,12 +117,11 @@ namespace PhotoMaton
             {
                 for (int j = 0; j < h; j++)
                 {
-                    p = CalcPoint(new Point(i, j));
+                    p = Next(new Point(i, j));
                     New.SetPixel(p.X, p.Y, resized.GetPixel(i, j));
                 }
             }
             pib.Image = New;
-            Thread.Sleep(100);
             return New;
         }
     }
